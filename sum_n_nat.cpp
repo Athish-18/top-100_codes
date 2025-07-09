@@ -7,15 +7,19 @@ using namespace std;
 // numbers
 int findSum(int n)
 {
-  int s = 0;
-  s = n * (n + 1) / 2; // sum of first n natural = n(n+1)/2
-  return s;            // sum of first n-1 nat =n(n-1)/2
+  int sum = 0;
+  for (int i = 1; i <= n; i++)
+  {
+    sum += i;
+  }
+  return sum;
 }
 
 // Driver code
 int main()
 {
   int n = 5;
+
   cout << findSum(n);
   return 0;
 }
