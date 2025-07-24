@@ -18,7 +18,8 @@ public:
     }
   }
 };
-
+//use this code to find the greatest common divisor (GCD) of two numbers more useful
+// This is a recursive implementation of the Euclidean algorithm for GCD
 gcd(int a, int b)
 
     if (a == 0)
